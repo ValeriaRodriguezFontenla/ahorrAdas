@@ -84,3 +84,31 @@ body {
   padding: 10px;
   height: 800px;
 }
+
+
+/*REPORTES STYLES*/
+
+.card{
+  width: 889px;
+  height: 652px;
+  border-radius: 6px;
+ color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
+}
+.card-title{
+  font-size: 40px;
+}
+h4{
+  font-size: 24px;
+  text-align: center;
+}
+.card-text{
+  font-size: 16px;
+  text-align: center;
+}
+.imagen-reportes{
+  margin: 50px;
+  height: 350px;
+  align-content: center;
+}
