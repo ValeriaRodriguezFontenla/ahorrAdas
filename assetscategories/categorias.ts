@@ -1,3 +1,6 @@
+import slugify from "../helpers/functions"
+
+
 type LocalStorage = {
         Categories?: Category[]
 
@@ -5,6 +8,7 @@ type LocalStorage = {
 
 type Category = {
         id: number,
+        name: string,
         title: string,
         slug: string
     }
@@ -21,11 +25,13 @@ const createCategory = (e) => {
      const newCategory: Category = {
          id: 1,
          name: newCategoryName,
-         slug: slugify(newCategoryName)
+         slug: slugify(newCategoryName),
+         title: ""
 
      }
      console.log(newCategory);
      
+
 } 
 formAddCategory.addEventListener('submit',createCategory) 
 

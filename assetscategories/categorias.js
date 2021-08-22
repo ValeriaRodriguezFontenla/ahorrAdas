@@ -1,5 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var functions_1 = require("../helpers/functions");
 var formAddCategory = document.getElementById('form-add-category');
-formAddCategory.addEventListener('submit', function (e) {
+var storage = {};
+var createCategory = function (e) {
     e.preventDefault();
-    alert('funciona');
-});
+    var form = e.target;
+    var newCategoryName = form.name.value;
+    var newCategory = {
+        id: 1,
+        name: newCategoryName,
+        slug: functions_1["default"](newCategoryName),
+        title: ""
+    };
+    console.log(newCategory);
+};
+formAddCategory.addEventListener('submit', createCategory);
