@@ -1,0 +1,52 @@
+/*Header*/
+.navbar {
+    height: 150px;
+    background-color: aquamarine;
+  }
+  .navbar-brand {
+    font-size: 50px;
+  }
+  .navbar-link a {
+    font-size: 60px;
+  }
+  
+  /*main-categories*/
+
+  .main-categories{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+  }
+
+  .container-main-categories{
+      width: 800px;
+      padding: 10px;
+      background-color: aliceblue;
+      border-radius: 10px;
+  }
+
+  .form-categories{
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+  }
+
+  .imput-button{  
+    width: 100%;
+    padding: 5px;
+  }
+  input{
+    width: 700px;
+  }
+ 
+  .example-row{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .example-container{
+      padding: 10px;
+  }
